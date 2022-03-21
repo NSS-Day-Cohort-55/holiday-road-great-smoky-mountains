@@ -1,9 +1,11 @@
 export const attractionPreviewHTML = (attraction) => { 
-  return `<section class="attractions>
+  return `<section class="attractions">
   <h2 class="attractionName">${attraction.name}</h2>
   <p class="attractionLocation">${attraction.city}, ${attraction.state}</p>
   <p class="attractionDescription">${attraction.description}</p>`
 }
+
+export const detailPreview = (param1) => { logic }
 
 // "id": 1,
 // "name": "Big White Shirt",

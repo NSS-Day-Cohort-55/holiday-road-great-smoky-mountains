@@ -3,6 +3,8 @@ import { getEateries } from "./eateries/EateryDataManager.js";
 import { eateriesDropdownHTML } from "./eateries/EateryDropDown.js";
 import { eateriesPreviewHTML } from "./eateries/EateryPreview.js";
 import { showAttractions } from "./attractions/AttractionDropDown.js"
+import { attractionPreviewHTML } from "./attractions/AttractionPreview.js"
+import { getAttractions } from "./attractions/AttractionDataManager.js";
 
 showAttractions()
 insertParks()
@@ -14,12 +16,25 @@ getEateries()
     }
 })
 
-// const showEteriesPreviewHTML = () => {
-// 	//Get a reference to the location on the DOM where the list will display
-// 	const eateryElement = document.querySelector("#eateryPreview");
-//     getEateries().then((data) => {
-//         eateryElement.innerHTML = eateriesPreviewHTML(data)
-//     })
-// }
+const showEteriesPreviewHTML = () => {
+	//Get a reference to the location on the DOM where the list will display
+	const eateryElement = document.querySelector("#eateryPreview");
+    getEateries().then((data) => {
+      for (const entry of data) {
+        eateryElement.innerHTML = eateriesPreviewHTML(entry)
+      }
+    })
+}
 
-// showEteriesPreviewHTML()
+const showAttractionsPreviewHTML = () => {
+	//Get a reference to the location on the DOM where the list will display
+	const attractionElement = document.querySelector("#attractionPreview");
+    getAttractions().then((data) => {
+      for (const entry of data) {
+        attractionElement.innerHTML = attractionPreviewHTML(entry)
+      }
+    })
+}
+
+showEteriesPreviewHTML()
+showAttractionsPreviewHTML()
