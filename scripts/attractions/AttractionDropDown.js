@@ -1,9 +1,9 @@
 import { getAttractions } from "./AttractionDataManager.js"
 
-export const attractionsDropdownHTML = (attraction) => {
-  return document.querySelector("#attractionsDrop").insertAdjacentHTML("afterbegin", `<option value="${attraction.name}">${attraction.name}</option>`)
+const attractionsDropdownHTML = (attraction) => {
+  document.querySelector("#attractionsDrop").insertAdjacentHTML("afterbegin", `<option value="${attraction.name}">${attraction.name}</option>`)
 }
-
+export const showAttractions = () => {
 getAttractions()
 .then(attractionData => {
   let attractions = attractionData
@@ -11,7 +11,7 @@ getAttractions()
       attractionsDropdownHTML(attraction)
   }
 })
-
+}
 
 // iterates attractions to grab names and make option html tags for select menu
 // ask instructor why this doesn't work
