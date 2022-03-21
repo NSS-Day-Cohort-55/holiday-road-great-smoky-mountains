@@ -3,10 +3,12 @@ import { getEateries } from "./eateries/EateryDataManager.js";
 import { eateriesDropdownHTML } from "./eateries/EateryDropDown.js";
 import { eateriesPreviewHTML } from "./eateries/EateryPreview.js";
 import { showAttractions } from "./attractions/AttractionDropDown.js";
-import { showStates} from   "./states/stateDropdown.js"
+import { showStates} from   "./states/stateDropdown.js";
 
-showAttractions()
+
+
 showStates()
+showAttractions()
 insertParks()
 getEateries()
 .then(eateryData => {
