@@ -6,7 +6,7 @@
 // amenities 
 //     wheelchairAccessible: boolean
 //     petFriendly: boolean
-//     wifi: boolan
+//     wifi: boolean
 //     diaperFacility: boolean
 //     playground: boolean
 //     restrooms: boolean

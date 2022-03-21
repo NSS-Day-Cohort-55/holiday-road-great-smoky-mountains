@@ -4,9 +4,11 @@ const statesDropdownHTML = (state) => {
      document.querySelector("#filteredStates").insertAdjacentHTML("afterbegin", `<option value="${state.abbreviation}">${state.name}</option>`)
 }
 
-getStates()
-.then(statesData => {
-    for (const state of statesData.states) {
-        statesDropdownHTML(state)
-    }
+export const showStates = () => {
+    getStates()
+    .then(statesData => {
+        for (const state of statesData.states) {
+            statesDropdownHTML(state)
+        }
 })
+}

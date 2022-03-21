@@ -2,9 +2,11 @@ import { insertParks } from "./parks/parkDropdown.js"
 import { getEateries } from "./eateries/EateryDataManager.js";
 import { eateriesDropdownHTML } from "./eateries/EateryDropDown.js";
 import { eateriesPreviewHTML } from "./eateries/EateryPreview.js";
-import { showAttractions } from "./attractions/AttractionDropDown.js"
+import { showAttractions } from "./attractions/AttractionDropDown.js";
+import { showStates} from   "./states/stateDropdown.js"
 
 showAttractions()
+showStates()
 insertParks()
 getEateries()
 .then(eateryData => {
@@ -14,12 +16,12 @@ getEateries()
     }
 })
 
-// const showEteriesPreviewHTML = () => {
-// 	//Get a reference to the location on the DOM where the list will display
-// 	const eateryElement = document.querySelector("#eateryPreview");
-//     getEateries().then((data) => {
-//         eateryElement.innerHTML = eateriesPreviewHTML(data)
-//     })
-// }
+const showEateriesPreviewHTML = () => {
+	const eateryElement = document.querySelector("#eateryPreview");
+    getEateries().then((data) => {
+        for (const entry of data)
+        eateryElement.innerHTML += eateriesPreviewHTML(entry)
+    })
+}
 
-// showEteriesPreviewHTML()
+showEateriesPreviewHTML()
