@@ -14,7 +14,7 @@ getAttractions()
 
 
 // iterates attractions to grab names and make option html tags for select menu
-// ask instructor why this doesn't
+// ask instructor why this doesn't work
 
 // export const getAttractionNames = () => {
 //   const attractionEl = document.querySelector(".attractionBox")
