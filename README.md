@@ -203,3 +203,5 @@ https://graphhopper.com/api/1/route?point=starting_latitude,starting_longitude&p
 7. Strive for consistency.
 8. Use semantic and valid HTML: validator at [https://validator.w3.org/](https://validator.w3.org/).
 
+<img src="/images/Wireframe.jpg" alt="wireFrame">
+<img src="/images/ERD.png" alt="ERD">
