@@ -1,5 +1,4 @@
-import { settings } from "../Settings.js"
-
+import {settings} from "../Settings.js"
 export const getAttractions = () => { 
   return fetch(settings.bizzare)
   .then(response => response.json())

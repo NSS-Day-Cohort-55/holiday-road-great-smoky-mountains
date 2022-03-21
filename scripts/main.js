@@ -1,11 +1,10 @@
 import { insertParks } from "./parks/parkDropdown.js"
 import { getEateries } from "./eateries/EateryDataManager.js";
 import { eateriesDropdownHTML } from "./eateries/EateryDropDown.js";
-import { eateriesPreviewHTML } from "./eateries/EateryPreview.js";
 import { showAttractions } from "./attractions/AttractionDropDown.js"
-import { attractionPreviewHTML } from "./attractions/AttractionPreview.js"
-import { getAttractions } from "./attractions/AttractionDataManager.js";
+import {showStates} from "./states/stateDropdown.js"
 
+showStates()
 showAttractions()
 insertParks()
 getEateries()
