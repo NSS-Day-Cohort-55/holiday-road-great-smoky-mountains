@@ -1,5 +1,6 @@
+import {settings} from "../Settings.js"
 export const getAttractions = () => { 
-  return fetch("http://holidayroad.nss.team/bizarreries")
+  return fetch(settings.bizzare)
   .then(response => response.json())
   .then(parsedResponse => {
     // attractions = parsedResponse
