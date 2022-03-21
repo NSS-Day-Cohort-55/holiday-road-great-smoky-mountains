@@ -18,7 +18,7 @@ import {getParks} from "./ParkDataManager.js"
 // })
 
 const parksDropdownHTML = (park) => {
-    document.querySelector("select").insertAdjacentHTML("beforeend", `<option value="${park.parkCode}">${park.fullName}</option>`)
+    document.querySelector("#filteredParks").insertAdjacentHTML("beforeend", `<option value="${park.parkCode}">${park.fullName}</option>`)
 }
 
 export const insertParks = () => {
