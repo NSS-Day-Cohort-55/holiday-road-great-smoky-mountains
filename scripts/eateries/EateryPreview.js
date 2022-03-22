@@ -15,22 +15,19 @@ import { getEateries } from "./EateryDataManager.js"
 
 const eateriesPreviewHTML = (eatery) => {
     return `
-    <section class="eatery">
+    <section>
         <header>
-            <h2 class="post__title">${eatery.businessName}</h2>
+            <h2 class=>${eatery.businessName}</h2>
         </header>
-        <p>${eatery.description}</p>
         <p>${eatery.city}, ${eatery.state}</p>
     </section>`
 }
-    
-//         <p>${eatery.amenities.wheelchairAccessible}, ${eatery.amenities.petFriendly}, ${eatery.amenities.wifi}, ${eatery.amenities.diaperFacility}, ${eatery.amenities.playground}, ${eatery.amenities.restroom}</p>
 
-
-export const showEateriesPreviewHTML = () => {
-	const eateryElement = document.querySelector("#eateryList");
+export const previewEatery = (index) => {
+    let selectedEatery = {}
+    const eateryElement = document.querySelector(".eateryPreview");
     getEateries().then((data) => {
-        for (const entry of data)
-        eateryElement.innerHTML += eateriesPreviewHTML(entry)
+        selectedEatery = data[index - 1]
+        eateryElement.innerHTML = eateriesPreviewHTML(selectedEatery)
     })
-}
+} 
