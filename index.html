@@ -1,52 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
-  <title>Roadtrip</title>
+  <title>GSM Holiday Road</title>
 </head>
+  
 <body>
-
-  <select id="attractionsDrop"></select>
-  <div class=""></div>
-
   
-  <title>Select A State to Visit </title>
-  <p>
-     
-      <select name="filteredStates" id="filteredStates">
-          <option value=''>-- Select a State --</option>
-      
-      </select>
-     
-  </p>
-  
-  <p>
-      <select id='stateParkSelector'>
-          <option value='selectPark'>-- Select a National Park --</option>
-      </select>
-  </p>
-
-  
-  <select name="filteredParks" id="filteredParks">
-    <option value="default">---</option>
+  <div class="dropdowns">
+  <select name="attractions "id="attractionsDrop">
+    <option value="">-- Select an Attraction --</option>
   </select>
 
-  <div></div>
+  <select name="filteredStates" id="filteredStates">
+    <option value=''>-- Select a State --</option>
+  </select>
+
+  <select name="filteredParks" id="filteredParks">
+    <option value="">-- Select a Park --</option>
+  </select>
 
   <select name="eateryDD" id="eateryDD">
-    <option value="default">Choose an Eatery</option>
+    <option value="">-- Select an Eatery --</option>
   </select>
-  
-  <div></div>
-
-  <section id="eateryPreview"></section>
-  
-  <div class="footer"><footer>&copy; C55, GREAT SMOKY MOUNTAINS - Andrew, Luke, Wesley, Sippy.</footer></div>
 
   <script type="module" src="./scripts/main.js"></script>
+</div>
   
+  <div class="footer">
+    <footer>&copy; C55, GREAT SMOKY MOUNTAINS - Andrew, Luke, Wesley, Sippy.</footer>
+  </div>
+
 </body>
+
 </html>
