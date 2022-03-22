@@ -6,3 +6,4 @@ export const getEateries = () => {
         return parsedResponse;
     })
 }
+
