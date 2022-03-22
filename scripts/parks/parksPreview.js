@@ -1,14 +1,14 @@
 // import { getParks } from "./ParkDataManager.js";
 
-// const parksPreviewHTML = (parks) => {
-//     return `
-//     <section>
-//         <header>
-//             <h2 class=>${parks.fullName}</h2>
-//         </header>
-//         <p>${parks.addresses.city}, ${parks.addresses.stateCode}</p>
-//     </section>`
-// }
+const parksPreviewHTML = (parks) => {
+    return `
+    <section>
+        <header>
+            <h2 class=>${parks.fullName}</h2>
+        </header>
+        <p>${parks.addresses.city}, ${parks.addresses.stateCode}</p>
+    </section>`
+}
 
 // export const previewParks = (index) => {
 //     let selectedPark = {}
@@ -18,3 +18,4 @@
 //         parkElement.innerHTML = parksPreviewHTML(selectedPark)
 //     })
 // } 
+
