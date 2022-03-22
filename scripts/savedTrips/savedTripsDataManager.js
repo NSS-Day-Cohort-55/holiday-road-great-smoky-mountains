@@ -7,7 +7,7 @@ export const createTrip = (tripObj) => {
     body: JSON.stringify(tripObj)
 
 })
-    .then(response => response.json())
+    .then(response => response.json()).then(insertTrips())
 }
 
 export const getTrips = () => {
@@ -17,3 +17,4 @@ export const getTrips = () => {
       return parsedResponse;
     })
 }
+

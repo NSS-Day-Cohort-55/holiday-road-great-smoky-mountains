@@ -5,6 +5,8 @@ import { showStates } from "./states/stateDropdown.js"
 import { settings } from "./Settings.js"
 import { previewEatery } from "./eateries/EateryPreview.js"
 import { previewAttraction } from "./attractions/AttractionPreview.js";
+import { createTrip, getTrips } from "./savedTrips/savedTripsDataManager.js";
+import { savedTripList } from "./savedTrips/TripList.js";
 // import { previewState } from "./states/statePreview.js";
 // import { previewParks } from "./parks/parksPreview.js";
 
@@ -46,3 +48,33 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
 //     }
     
 // })
+
+const showTripList = () => {
+	//Get a reference to the location on the DOM where the list will display
+	const postElement = document.querySelector(".savedTrips");
+	getTrips().then((allTrips) => {
+		postElement.innerHTML = savedTripList(allTrips);
+	})
+}
+
+// Populates Saved Trips div with State Name, Park Name, Eatery Name,  Attraction Name upon save click
+
+document.querySelector("#previewBox").addEventListener("click", event => {
+  if (event.target.id === "saveButton") {
+    const state = document.querySelector(".statePreview").innerText
+    const park = document.querySelector(".parkPreview").innerText
+    const eatery = document.querySelector(".eateryPreview").innerText
+    const attraction = document.querySelector(".bizarrePreview").innerText
+    console.log(eatery); // Checks to see if correct value is grabbed
+  
+    const savedTrip = {
+      stateName: state,
+      parkName: park,
+      eateryName: eatery,
+      attractionName: attraction
+    }
+    // console.log(savedTrip.eateryName);
+      createTrip(savedTrip)
+      .then(showTripList)
+  }
+})
