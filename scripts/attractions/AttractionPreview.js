@@ -5,8 +5,6 @@ export const attractionPreviewHTML = (attraction) => {
   <p class="attractionDescription">${attraction.description}</p>`
 }
 
-export const detailPreview = (param1) => { logic }
-
 // "id": 1,
 // "name": "Big White Shirt",
 // "state": "AL",

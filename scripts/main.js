@@ -4,6 +4,7 @@ import { eateriesDropdownHTML } from "./eateries/EateryDropDown.js";
 import { showAttractions } from "./attractions/AttractionDropDown.js"
 import {showStates} from "./states/stateDropdown.js"
 import { getAttractions } from "./attractions/AttractionDataManager.js";
+import {attractionPreviewHTML} from "./attractions/AttractionPreview.js";
 
 showStates()
 showAttractions()
@@ -28,10 +29,10 @@ const showEteriesPreviewHTML = () => {
 
 const showAttractionsPreviewHTML = () => {
 	//Get a reference to the location on the DOM where the list will display
-	const attractionElement = document.querySelector("#attractionPreview");
+	const attractionElement = document.querySelector("#yaya");
     getAttractions().then((data) => {
       for (const entry of data) {
-        attractionElement.innerHTML = attractionPreviewHTML(entry)
+        attractionElement.innerHTML += attractionPreviewHTML(entry)
       }
     })
 }
