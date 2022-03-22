@@ -1,4 +1,6 @@
-export const attractionPreviewHTML = (attraction) => { 
+import { getAttractions } from "./AttractionDataManager.js"
+
+const attractionPreviewHTML = (attraction) => { 
   return `<section class="attractions>
   <h2 class="attractionName">${attraction.name}</h2>
   <p class="attractionLocation">${attraction.city}, ${attraction.state}</p>
@@ -14,3 +16,13 @@ export const attractionPreviewHTML = (attraction) => {
 //     "souvenirs": false,
 //     "restrooms": false
 // }
+
+export const showAttractionsPreviewHTML = () => {
+	//Get a reference to the location on the DOM where the list will display
+	const attractionElement = document.querySelector("#yaya");
+    getAttractions().then((data) => {
+      for (const entry of data) {
+        attractionElement.innerHTML += attractionPreviewHTML(entry)
+      }
+    })
+}

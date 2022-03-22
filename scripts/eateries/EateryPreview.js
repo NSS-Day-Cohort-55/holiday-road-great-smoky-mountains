@@ -11,7 +11,9 @@
 //     playground: boolean
 //     restrooms: boolean
 
-export const eateriesPreviewHTML = (eatery) => {
+import { getEateries } from "./EateryDataManager.js"
+
+const eateriesPreviewHTML = (eatery) => {
     return `
     <section class="eatery">
         <header>
@@ -24,3 +26,11 @@ export const eateriesPreviewHTML = (eatery) => {
     
 //         <p>${eatery.amenities.wheelchairAccessible}, ${eatery.amenities.petFriendly}, ${eatery.amenities.wifi}, ${eatery.amenities.diaperFacility}, ${eatery.amenities.playground}, ${eatery.amenities.restroom}</p>
 
+
+export const showEateriesPreviewHTML = () => {
+	const eateryElement = document.querySelector("#eateryList");
+    getEateries().then((data) => {
+        for (const entry of data)
+        eateryElement.innerHTML += eateriesPreviewHTML(entry)
+    })
+}
