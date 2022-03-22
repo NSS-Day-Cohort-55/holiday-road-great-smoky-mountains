@@ -3,6 +3,7 @@ import { getEateries } from "./eateries/EateryDataManager.js";
 import { eateriesDropdownHTML } from "./eateries/EateryDropDown.js";
 import { showAttractions } from "./attractions/AttractionDropDown.js"
 import {showStates} from "./states/stateDropdown.js"
+import { getAttractions } from "./attractions/AttractionDataManager.js";
 
 showStates()
 showAttractions()
