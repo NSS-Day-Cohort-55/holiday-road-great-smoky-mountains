@@ -1,6 +1,6 @@
 import {getEateries} from "./EateryDataManager.js"
 
-export const eateriesDropdownHTML = (eatery) => {
+const eateriesDropdownHTML = (eatery) => {
     return document.querySelector("#eateryDD").insertAdjacentHTML("beforeend", `<option value="${eatery.id}">${eatery.businessName}</option>`)
 }
 

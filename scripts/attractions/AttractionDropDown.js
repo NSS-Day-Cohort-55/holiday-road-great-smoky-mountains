@@ -1,7 +1,7 @@
 import { getAttractions } from "./AttractionDataManager.js"
 
 const attractionsDropdownHTML = (attraction) => {
-  document.querySelector("#attractionsDrop").insertAdjacentHTML("beforeend", `<option value="${attraction.name}">${attraction.name}</option>`)
+  document.querySelector("#attractionsDD").insertAdjacentHTML("beforeend", `<option value="${attraction.name}">${attraction.name}</option>`)
 }
 export const showAttractions = () => {
 getAttractions()
