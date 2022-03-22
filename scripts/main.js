@@ -1,20 +1,18 @@
 import { insertParks } from "./parks/parkDropdown.js"
-import { getEateries } from "./eateries/EateryDataManager.js";
-import { eateriesDropdownHTML } from "./eateries/EateryDropDown.js";
-import { eateriesPreviewHTML } from "./eateries/EateryPreview.js";
-import { showAttractions } from "./attractions/AttractionDropDown.js";
-import { showStates} from   "./states/stateDropdown.js";
+import { eateriesPopulate } from "./eateries/EateryDropDown.js";
+import { showAttractions } from "./attractions/AttractionDropDown.js"
+import { showStates } from "./states/stateDropdown.js"
+import { settings } from "./Settings.js"
+const initializeSite = () => {
+    showStates()
+    showAttractions()
+    eateriesPopulate()
+}
+initializeSite()
 
-
-
-showStates()
-showAttractions()
-insertParks()
-getEateries()
-.then(eateryData => {
-    let eateries = eateryData
-    for (const eatery of eateries) {
-        eateriesDropdownHTML(eatery)
+document.querySelector(".dropdowns").addEventListener("change", event => {
+    if (event.target.id === "filteredStates") {
+        insertParks(settings.npsKey + `&stateCode=${event.target.value}`)
     }
 })
 

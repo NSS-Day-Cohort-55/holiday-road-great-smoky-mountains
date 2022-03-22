@@ -1,5 +1,4 @@
-import {settings} from "../Settings.js"
-export const getParks = () => {
-    return fetch(settings.npsKey).then(response => response.json())
+export const getParks = (link) => {
+    return fetch(`${link}`).then(response => response.json())
 }
 
