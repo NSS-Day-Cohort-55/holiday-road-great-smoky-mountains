@@ -17,21 +17,21 @@ const initializeSite = () => {
 initializeSite()
 
 document.querySelector(".dropdowns").addEventListener("change", event => {
-    let chosenState = ""
     if (event.target.id === "filteredStates") {
-        chosenState = event.target.value
         insertParks(settings.npsKey + `&stateCode=${event.target.value}`)
-        if (event.target.id === "filteredParks"){
-            console.log(chosenState);
-            getParks(settings.npsKey + `&stateCode=${chosenState}`)
-            .then(data => data)
-        }
-        // let selectedIndex = event.target.selectedIndex;
-        // previewState(selectedIndex)
     }
 
-    
+    if (event.target.id === "filteredParks") {
+        getParks(settings.npsKey + `&stateCode=${document.querySelector("#filteredStates").value}`)
+        .then(parks => {
+            let result = parks.data.find(o => o.fullName === event.target.value)
+            document.querySelector("body").classList.add("background-image")
+            document.querySelector("body").style.backgroundImage = `url(${result.images[0].url})`
+        })
+    }  
 })
+        // let selectedIndex = event.target.selectedIndex;
+        // previewState(selectedIndex)
 
 document.querySelector(".dropdowns").addEventListener("change", event => {
     if (event.target.id === "eateryDD") {

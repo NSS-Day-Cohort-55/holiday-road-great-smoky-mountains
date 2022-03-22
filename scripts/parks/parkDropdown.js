@@ -6,7 +6,7 @@ const parksDropdownHTML = (parksData) => {
     <option value="">-- Select a Park --</option>
   </select>`
     for (const park of parksData.data) {
-        document.querySelector("#filteredParks").insertAdjacentHTML("beforeend", `<option value="${park.parkCode}">${park.fullName}</option>`)
+        document.querySelector("#filteredParks").insertAdjacentHTML("beforeend", `<option>${park.fullName}</option>`)
     }
 }
 
