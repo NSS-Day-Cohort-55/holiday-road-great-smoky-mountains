@@ -1,7 +1,3 @@
-import { insertTrips } from "../main.js"
-import { tripHTML } from "./trip.js"
-
-// import { insertTrips } from "./trip.js"
 export const createTrip = (tripObj) => { 
   return fetch("http://localhost:8088/trips", {
     method: "POST",
@@ -11,7 +7,7 @@ export const createTrip = (tripObj) => {
     body: JSON.stringify(tripObj)
 
 })
-    .then(response => response.json()).then(document.querySelector(".savedTrips").innerHTML = insertTrips())
+    .then(response => response.json())
 }
 
 let trips = []
@@ -24,7 +20,3 @@ export const getTrips = () => {
       return parsedResponse;
     })
 }
-
-export const useTrips = () => { 
-  return [...trips]
- }

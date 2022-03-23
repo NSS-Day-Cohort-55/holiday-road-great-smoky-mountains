@@ -9,15 +9,4 @@ export const getAttractions = () => {
   } )
 }
 
-
-// let attractions = []
-// export const useAttractions = () => { 
-//   return [...attractions]
-//  }
-
- // checks to see if correct data is fetched
-// getAttractions().then(response => {
-//   console.log(response)
-// })
-
  

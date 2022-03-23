@@ -9,16 +9,6 @@ export const tripHTML = (tripObj) => {
   </section>`
  }
 
-// export const insertTrips = () => {
-//   const savedTripsEl = document.querySelector(".savedTrips")
-//   getTrips()
-//   .then(allTrips => {
-//       for (const trip of allTrips) {
-//           savedTripsEl.innerHTML += tripHTML(trip)
-//       }
-//   })
-// }
-
 //  const savedTrip = {
 //   stateName: state,
 //   parkName: park,
