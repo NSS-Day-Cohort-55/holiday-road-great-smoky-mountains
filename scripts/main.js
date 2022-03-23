@@ -53,10 +53,3 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
     
 })
 
-// document.querySelector(".dropdowns").addEventListener("change", event => {
-//     if (event.target.id === "filteredParks") {
-//         let selectedIndex = event.target.selectedIndex;
-//         previewParks(selectedIndex)
-//     }
-    
-// })
