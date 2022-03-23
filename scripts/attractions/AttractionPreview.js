@@ -14,7 +14,7 @@ const attractionPreviewHTML = (attraction) => {
   return `
   <section>
       <header>
-          <h2>${attraction.name}</h2>
+          <h3>${attraction.name}</h3>
       </header>
       <p>${attraction.city}, ${attraction.state}</p>
   </section>`
