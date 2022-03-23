@@ -2,7 +2,7 @@ import { getParks } from "./ParkDataManager.js"
 
 
 const parksDropdownHTML = (parksData) => {
-    document.querySelector(".parksBox").innerHTML = `<select name="filteredParks" id="filteredParks">
+    document.querySelector(".parksBox").innerHTML = `<select name="filteredParks" class="DD" id="filteredParks">
     <option value="">-- Select a Park --</option>
   </select>`
     for (const park of parksData.data) {

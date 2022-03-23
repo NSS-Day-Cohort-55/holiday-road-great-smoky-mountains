@@ -11,10 +11,9 @@
     width: 20%;
     
   }
-/* .dropdowns { */
 
-/* } */
 .header {
+    display: flex;
     border-top: 1px solid lightblue;
     background-color:  #eaedf1;
     max-width: 100%;
@@ -26,6 +25,22 @@ body {
 	font-family: 'Lato', sans-serif;
   margin-top:0;
 }  
+
+.dropdowns {
+  display: flex;
+  flex-direction: column ;
+}
+
+.DD {
+  width: fit-content;
+  height: 50 px;
+  border: 1 px solid #999;
+  font-size: 18px;
+
+}
+
+
+
 .footer {
     display: flex;
     flex-wrap: nowrap;
@@ -52,6 +67,15 @@ body {
 .tripPreview {
     background-color: rgb(241, 245, 248, .5);
 }
+aside { 
+  width: 30%;
+  border: 2px solid black;
+  padding-left: 15 px;
+  margin-left: 15 px;
+  float: right;
+  background-color: rgb(241, 245, 248, .5);
+}
+
 
 .savedTrips {
     background-color: rgb(241, 245, 248, .5);
