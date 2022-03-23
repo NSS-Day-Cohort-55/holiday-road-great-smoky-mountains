@@ -6,8 +6,9 @@ import { settings } from "./Settings.js"
 import {getParks} from "./parks/ParkDataManager.js"
 import { previewEatery } from "./eateries/EateryPreview.js"
 import { previewAttraction } from "./attractions/AttractionPreview.js";
-import { createTrip, getTrips } from "./savedTrips/savedTripsDataManager.js";
+import { createTrip, getTrips, useTrips } from "./savedTrips/savedTripsDataManager.js";
 import { savedTripList } from "./savedTrips/TripList.js";
+import { tripHTML } from "./savedTrips/trip.js";
 // import { previewState } from "./states/statePreview.js";
 // import { previewParks } from "./parks/parksPreview.js";
 
@@ -66,12 +67,23 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
     
 // })
 
-const showTripList = () => {
-	//Get a reference to the location on the DOM where the list will display
-	const postElement = document.querySelector(".savedTrips");
-	getTrips().then((allTrips) => {
-		postElement.innerHTML = savedTripList(allTrips);
-	})
+// const showTripList = () => {
+// 	//Get a reference to the location on the DOM where the list will display
+// 	const postElement = document.querySelector(".savedTrips");
+// 	getTrips().then((allTrips) => {
+//     for (const trip of allTrips)
+// 		postElement.innerHTML += savedTripList(trip)
+// 	})
+// }
+
+export const insertTrips = () => {
+  const savedTripsEl = document.querySelector(".savedTrips")
+  getTrips()
+  .then(allTrips => {
+      for (const trip of allTrips) {
+          savedTripsEl.innerHTML += tripHTML(trip)
+      }
+  })
 }
 
 // Populates Saved Trips div with State Name, Park Name, Eatery Name,  Attraction Name upon save click
@@ -92,6 +104,5 @@ document.querySelector("#previewBox").addEventListener("click", event => {
     }
     // console.log(savedTrip.eateryName);
       createTrip(savedTrip)
-      .then(showTripList)
   }
 })

@@ -1,9 +1,9 @@
-import { trip } from "./trip.js";
+import { tripHTML } from "./trip.js";
 
-export const savedTripList = (allTrips) => { 
-  let tripHTML = ''
-  
-  for (const tripObj of allTrips) { 
-    tripHTML += trip(tripObj)
+export const savedTripList = (tripArr) => { 
+  let tripHTMLEl = ''
+  for (const trip of tripArr) { 
+    tripHTMLEl += tripHTML(trip)
    }
+   return tripHTMLEl
  }
