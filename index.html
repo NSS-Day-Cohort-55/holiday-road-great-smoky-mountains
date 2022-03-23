@@ -12,52 +12,41 @@
 <body>
   
   <div class="dropdowns">
-  <select name="attractionsDD" id="attractionsDD">
-    <option value="">-- Select an Attraction --</option>
-  </select>
+    <select name="filteredStates" id="filteredStates">
+      <option value=''>-- Select a State to Find a Park--</option>
+    </select>
 
-  <select name="filteredStates" id="filteredStates">
-    <option value=''>-- Select a State to Find a Park--</option>
-  </select>
+    <div class="parksBox"></div>
 
- <div class="parksBox"></div>
+    <select name="eateryDD" id="eateryDD">
+      <option value="">-- Select an Eatery --</option>
+    </select>
 
-  <select name="eateryDD" id="eateryDD">
-    <option value="">-- Select an Eatery --</option>
-  </select>
+    <select name="attractionsDD" id="attractionsDD">
+      <option value="">-- Select an Attraction --</option>
+    </select>
+  </div>
 
-  <script type="module" src="./scripts/main.js"></script>
-</div>
+  <div class="details-box"></div>
 
+  <aside class="tripPreview">
+    <h2>Trip Preview</h2>
+    <section class="statePreview">
+    </section>
+    <section class="parkPreview">
+    </section>
+    <section class="eateryPreview">
+    </section>
+    <section class="bizarrePreview">
+    </section>
+    <button>Save Trip</button>
+  </aside>
 
-<div class="details-box"></div>
-<aside id="previewBox">
-  <h2>Trip Preview</h2>
-  <section class="statePreview">
-    State
-  </section>
-  <section class="parkPreview">
-    park
-  </section>
-  <section class="eateryPreview">
-    eatery
-  </section>
-  <section class="bizarrePreview">
-    bizarre
-  </section>
-  <button id="saveButton">Save Trip</button>
-</aside>
-
-<div class="savedTrips">
-  
-
-</div>
-
-  
   <div class="footer">
     <footer>&copy; C55, GREAT SMOKY MOUNTAINS - Andrew, Luke, Wesley, Sippy.</footer>
   </div>
 
+  <script type="module" src="./scripts/main.js"></script>
 </body>
 
 </html>
