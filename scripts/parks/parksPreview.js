@@ -4,6 +4,7 @@ const parksPreviewHTML = (parks) => {
     <section>
         <header>
             <h3>${parks}</h3>
+            <button id="park-details">details</button>
         </header>
     </section>`
 }
