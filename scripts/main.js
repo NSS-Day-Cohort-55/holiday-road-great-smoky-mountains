@@ -1,4 +1,4 @@
-import { insertParks } from "./parks/parkDropdown.js"
+import { insertParks } from "./parks/parkDropdown.js";
 import { eateriesPopulate } from "./eateries/EateryDropDown.js";
 import { showAttractions } from "./attractions/AttractionDropDown.js"
 import { showStates } from "./states/stateDropdown.js"
