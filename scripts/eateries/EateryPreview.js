@@ -17,7 +17,7 @@ const eateriesPreviewHTML = (eatery) => {
     return `
     <section>
         <header>
-            <h2 class=>${eatery.businessName}</h2>
+            <h3>${eatery.businessName}</h3>
         </header>
         <p>${eatery.city}, ${eatery.state}</p>
     </section>`
