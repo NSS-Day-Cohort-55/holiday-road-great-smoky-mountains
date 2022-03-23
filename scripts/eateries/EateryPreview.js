@@ -20,6 +20,7 @@ const eateriesPreviewHTML = (eatery) => {
             <h3>${eatery.businessName}</h3>
         </header>
         <p>${eatery.city}, ${eatery.state}</p>
+        <button id="eatery-details">details</button>
     </section>`
 }
 
