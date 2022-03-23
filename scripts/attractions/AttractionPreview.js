@@ -17,6 +17,7 @@ const attractionPreviewHTML = (attraction) => {
           <h3>${attraction.name}</h3>
       </header>
       <p>${attraction.city}, ${attraction.state}</p>
+      <button id="attraction-details">details</button>
   </section>`
 }
 
