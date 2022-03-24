@@ -34,11 +34,12 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
                 let selectedPark = event.target.value;
                 previewPark(selectedPark)
                 let result = parks.data.find(o => o.fullName === event.target.value)
-                document.querySelector("body").classList.add("background-image")
-                document.querySelector("body").style.backgroundImage = `url(${result.images[0].url})`
+                document.querySelector("article").classList.add("background-image")
+                document.querySelector("article").style.backgroundImage = `url(${result.images[0].url})`
             })
     }
 })
+
 
 document.querySelector(".dropdowns").addEventListener("change", event => {
     if (event.target.id === "eateryDD") {
