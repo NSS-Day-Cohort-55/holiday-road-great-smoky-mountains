@@ -48,6 +48,7 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
     }
 })
 
+
 document.querySelector(".dropdowns").addEventListener("change", event => {
     if (event.target.id === "eateryDD") {
         let selectedIndex = event.target.selectedIndex;
