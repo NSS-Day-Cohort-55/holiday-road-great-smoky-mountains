@@ -1,47 +1,125 @@
-.logo-image {
-    max-width: 100%;
-    /* border-top: 1px solid lightblue; */
-    background-color: #eaedf1;
+.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
 
-  }
-  
-  .logo {
-    height: 100px;
-    margin-right: 50px;
-    width: 20%;
-    
-  }
+.tripPreview {
+    background-color: rgb(241, 245, 248, .4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55vh;
+    width: 50vw;
+}
+
+.savedTrips {
+  background-color: rgb(241, 245, 248, .4);
+  height: 40vh;
+  width: 50vw;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y:auto
+}
+
+.details-box {
+    background-color: rgb(241, 245, 248, .4);
+    height: 25vh;
+    width: 50vw;
+}
 
 .header {
-    display: flex;
-    border-top: 1px solid lightblue;
-    background-color:  #eaedf1;
-    max-width: 100%;
-    
-  }
+  display: flex;
+  height: 12vh;
+  width: 100vw;
+  border-bottom: 1em solid black;
+}
 
-body {
-	background: #eaedf1;
-	font-family: 'Lato', sans-serif;
-  margin-top:0;
-}  
+.logo {
+  max-height: 7em;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  background-image: url(/images/smokies.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 
 .dropdowns {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40vh;
+  width: 50vw;
+  background-color: rgb(241, 245, 248, .4);
 }
 
-.DD {
+.leftC {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+}
+
+.rightC {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+}
+
+footer {
+  height: 5vh;
+  width: 100vw;
+}
+
+/* .logo-image {
+    max-width: 100%;
+    /* border-top: 1px solid lightblue; */
+    background-color: #eaedf1;
+} */
+  
+  /* .logo {
+    height: 100px;
+    margin-right: 50px;
+    width: 20%;    
+} */
+
+/* header {
+    display: flex;
+    border-top: 1px solid lightblue;
+    background-color:  #eaedf1;
+    max-width: 100%;    
+} */
+
+/* body {
+	background: #eaedf1;
+	font-family: 'Lato', sans-serif;
+  margin-top:0;
+}   */
+
+/* .dropdowns {
+  display: flex;
+  flex-direction: column ;
+} */
+
+/* .DD {
   width: fit-content;
   height: 50 px;
   border: 1 px solid #999;
   font-size: 18px;
 
-}
+} */
 
-
-
-.footer {
+/* footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -54,29 +132,14 @@ body {
     width: 100%;
     background-color: whitesmoke;
     margin: auto;
-   
-  }
+} */
 
-
-.background-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-.tripPreview {
-    background-color: rgb(241, 245, 248, .5);
-}
-aside { 
+/* aside { 
   width: 30%;
   border: 2px solid black;
   padding-left: 15 px;
   margin-left: 15 px;
   float: right;
   background-color: rgb(241, 245, 248, .5);
-}
+} */
 
-
-.savedTrips {
-    background-color: rgb(241, 245, 248, .5);
-}
