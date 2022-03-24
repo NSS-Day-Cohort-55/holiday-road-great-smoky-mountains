@@ -1,18 +1,19 @@
 
 const parksPreviewHTML = (parks) => {
     return `
-    <section>
+    <section class="test">
         <header>
             <h3>${parks}</h3>
         </header>
         <section>
-            <h2>5 Day Forecast:</h2>
+            <h4>5 Day Forecast:</h4>
             <ul id="forecast">
 
             </ul>
         </section>
         <button id="park-details">details</button>
-    </section>`
+    </section>
+    `
 }
 
 export const previewPark = (value) => {

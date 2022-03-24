@@ -6,13 +6,9 @@ The Great Smoky Mountains team created this app for someone like Jake, an active
 The user will make their trip selection starting with the state. Once the state is selected, a second, dependent, dropdown box will appear for them to select the park they want to visit. Once the user selects a park, a helpful five day forcast of the weather for that selected park's location will appear in the 'Trip Preview' space. Further, the user can select the eatery and attraction of their choice. Should the user want to find out more information about their selections, they can see the details shown at the bottom right of their screen after they click the 'details' button. Lastly, when the user completes their selection and clicks the 'Save Trip' button, a list of their 'Saved Trips' can be seen at the bottom of the page. 
 
 
-The Great Smoky Mountains team at NSS-C55 include the following: Andrew Cheatham, Wesley Mitchel, Luke Slater, and Siprachanh Chanthaphaychith.
+The Great Smoky Mountains team at NSS-C55 include the following: Andrew Cheatham, Wesley Mitchell, Luke Slater, and Siprachanh Chanthaphaychith.
 
 
 Below are some additional helpful files we used for our planning. The Wireframe.jpg image is a snapshot of our design architect, using Miro. The GSM-ERD.png is an export file of our Entity Relationship Diagram.
 <img src="/images/Wireframe.jpg" alt="wireFrame">
 <img src="/images/GSM-ERD.png" alt="ERD">
-
-
-
-
