@@ -12,64 +12,64 @@
 
 <body>
 
-  <header class="Header">
+
+<body>
+
+  <header class="header">   
     <div class="logo-image">
-      <img class="logo" src="images/Great Smoky Mountains-logos_black.png" alt="GSM logo"> 
+      <img class="logo" src="images/Great Smoky Mountains-logos_black.png" alt="GSM logo">
     </div>
-  <div>
-    <h2 class="Heading"> Let's Take an Adventurous Road Trip. Explore the Fun Parks, Eaterries, and Bizarraries of USA! </h2>
-  </div>
-</header>
-<main>
-<article>
-   <article class="content">
- 
-<h3> What State Would You Like to Visit? </h2>
+    <h1> Let's Take an Adventurous Road Trip to the Parks of the United States of America </h1>
+  </header>
 
-  <section class="dropdowns">
-    <select name="filteredStates" class="DD" id="filteredStates" onchange="populate('filteredStates', 'filteredParks')">
-      <option value=''>-- Select a State to Find a Park--</option>
-    </select>
+  <main>
+    
+    <div class="leftC">
 
-<h3> What Park Would You Like to Visit? </h2>
-    <div class="parksBox"></div>
+      <div class="dropdowns">
+        <select name="filteredStates" class="DD" id="filteredStates">
+          <option value=''>-- Select a State to Find a Park--</option>
+        </select>
 
-<h3> What Restaurant Would You Like to Try? </h2>
-    <select name="eateryDD" class="DD" id="eateryDD">
-      <option value="">-- Select an Eatery --</option>
-    </select>
+        <div class="parksBox"></div>
 
-<h3> What Atttraction Interests You? </h2>
-    <select name="attractionsDD" class="DD" id="attractionsDD">
-      <option value="">-- Select an Attraction --</option>
-    </select>
- 
-  </div>
+        <select name="eateryDD" class="DD" id="eateryDD">
+          <option value="">-- Select an Eatery --</option>
+        </select>
 
-  <div class="details-box"></div>
-  <div id="previewBox">
-  
-  <aside class="tripPreview">
-    <h2> See Your Trip Preview: </h2>
-    <section class="statePreview">
-    </section>
-    <section class="parkPreview">
-    </section>
-    <section class="eateryPreview">
-    </section>
-    <section class="bizarrePreview">
-    </section>
-    <button id="saveButton">Save Trip</button>
-  </aside>
-    <div class="savedTrips"></div>
+        <select name="attractionsDD" class="DD" id="attractionsDD">
+          <option value="">-- Select an Attraction --</option>
+        </select>      
+      </div>
 
-</section>
-</article>
-</article>
-</main>
-  <div class="footer">
-    <footer>&copy; C55 - NSS Road Trips GREAT SMOKY MOUNTAINS Group- Andrew, Luke, Wesley & Sippy.</footer>
-  </div>
+      <div class="savedTrips">Your Travel Itinerary</div>
+
+    </div>
+
+    <div class="rightC">
+
+      <aside id="previewBox" class="tripPreview">
+        <h2 class=>Trip Preview</h2>
+        <section class="statePreview">
+        </section>
+        <section class="parkPreview">
+        </section>
+        <section class="eateryPreview">
+        </section>
+        <section class="bizarrePreview">
+        </section>
+        <button id="saveButton">Save Trip</button>
+      </aside>
+
+      <div class="details-box">More Details</div>
+      
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; C55 - NSS Road Trips GREAT SMOKY MOUNTAINS Group- Andrew, Luke, Wesley & Sippy.
+  </footer>
 
   <script type="module" src="./scripts/main.js"></script>
 

@@ -34,8 +34,8 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
                 let selectedPark = event.target.value;
                 previewPark(selectedPark)
                 let result = parks.data.find(o => o.fullName === event.target.value)
-                document.querySelector("article").classList.add("background-image")
-                document.querySelector("article").style.backgroundImage = `url(${result.images[0].url})`
+                document.querySelector("main").classList.add("background-image")
+                document.querySelector("main").style.backgroundImage = `url(${result.images[0].url})`
             })
     }
 })

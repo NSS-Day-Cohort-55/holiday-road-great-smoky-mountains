@@ -16,9 +16,7 @@ import { getEateries } from "./EateryDataManager.js"
 const eateriesPreviewHTML = (eatery) => {
     return `
     <section>
-        <header>
-            <h3>${eatery.businessName}</h3>
-        </header>
+        <h3>${eatery.businessName}</h3>
         <p>${eatery.city}, ${eatery.state}</p>
         <button id="eatery-details">details</button>
     </section>`
