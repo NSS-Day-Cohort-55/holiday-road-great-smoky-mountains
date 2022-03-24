@@ -19,6 +19,7 @@ const attractionPreviewHTML = (attraction) => {
       <p>${attraction.city}, ${attraction.state}</p>
       <button id="attraction-details">details</button>
   </section>`
+  
 }
 
 export const previewAttraction = (index) => {

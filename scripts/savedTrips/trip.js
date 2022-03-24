@@ -6,7 +6,8 @@ export const tripHTML = (tripObj) => {
   <p>${tripObj.parkName}</p>
   <p>${tripObj.eateryName}</p>
   <p>${tripObj.attractionName}</p>
-  </section>`
+  </section>
+  <hr style="width:50%", size="3", color=black>  `
  }
 
 //  const savedTrip = {

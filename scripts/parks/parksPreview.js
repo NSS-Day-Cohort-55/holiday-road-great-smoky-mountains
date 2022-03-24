@@ -1,7 +1,7 @@
 
 const parksPreviewHTML = (parks) => {
     return `
-    <section>
+    <section id="test">
         <header>
             <h3>${parks}</h3>
         </header>
