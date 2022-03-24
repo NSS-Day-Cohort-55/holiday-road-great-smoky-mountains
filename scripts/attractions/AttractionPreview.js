@@ -12,14 +12,15 @@ import { getAttractions } from "./AttractionDataManager.js"
 
 const attractionPreviewHTML = (attraction) => {
   return `
-  <section>
+  <section class="test">
       <header>
           <h3>${attraction.name}</h3>
       </header>
       <p>${attraction.city}, ${attraction.state}</p>
       <button id="attraction-details">details</button>
-  </section>`
-  
+  </section>
+  `
+
 }
 
 export const previewAttraction = (index) => {

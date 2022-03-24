@@ -105,10 +105,10 @@ document.querySelector(".tripPreview").addEventListener("click", event => {
                 let foundPark = parks.data.find(o => o.fullName === chosenPark)
                 document.querySelector(".details-box").innerHTML = 
                 `
-                Address: ${foundPark.addresses[0].postalCode}, ${foundPark.addresses[0].line1}, 
-                \n ${foundPark.addresses[0].city}, ${foundPark.addresses[0].stateCode} \n
+                <p>Address: ${foundPark.addresses[0].postalCode}, ${foundPark.addresses[0].line1}, 
+                \n ${foundPark.addresses[0].city}, ${foundPark.addresses[0].stateCode} \n</p>
                 Phone Number ${foundPark.contacts.phoneNumbers[0].phoneNumber} \n
-                ${foundPark.description}
+                <p>${foundPark.description}</p>
                 `
             })
     }
@@ -134,8 +134,8 @@ document.querySelector(".tripPreview").addEventListener("click", event => {
                 let foundAttraction = attractions.find(o => o.name === chosenAttraction)
                 document.querySelector(".details-box").innerHTML = 
                 `
-                City: ${foundAttraction.city} \n
-                State: ${foundAttraction.state} \n
+                <p>City: ${foundAttraction.city} \n</p>
+                <p>State: ${foundAttraction.state} \n</p>
                 ${foundAttraction.description}
                 ${foundAttraction.ameneties.souvenirs ? `Souvenirs are available for purchase.` : ''}
                 ${foundAttraction.ameneties.restrooms ? `Public restrooms are available.` : ''}
