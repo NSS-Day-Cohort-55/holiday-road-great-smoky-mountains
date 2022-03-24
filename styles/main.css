@@ -1,12 +1,145 @@
 .background-image {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;    
 }
 
 .tripPreview {
-    background-color: rgb(241, 245, 248, .5);
+    background-color: rgb(241, 245, 248, .4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55vh;
+    width: 50vw;
 }
 
 .savedTrips {
-    background-color: rgb(241, 245, 248, .5);
+  background-color: rgb(241, 245, 248, .4);
+  height: 40vh;
+  width: 50vw;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y:auto
 }
+
+.details-box {
+    background-color: rgb(241, 245, 248, .4);
+    height: 25vh;
+    width: 50vw;
+}
+
+.header {
+  display: flex;
+  height: 12vh;
+  width: 100vw;
+  border-bottom: 1em solid black;
+}
+
+.logo {
+  max-height: 7em;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  background-image: url(/images/smokies.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40vh;
+  width: 50vw;
+  background-color: rgb(241, 245, 248, .4);
+}
+
+.leftC {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+}
+
+.rightC {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+}
+
+footer {
+  height: 5vh;
+  width: 100vw;
+}
+
+/* .logo-image {
+    max-width: 100%;
+    /* border-top: 1px solid lightblue; */
+    background-color: #eaedf1;
+} */
+  
+  /* .logo {
+    height: 100px;
+    margin-right: 50px;
+    width: 20%;    
+} */
+
+/* header {
+    display: flex;
+    border-top: 1px solid lightblue;
+    background-color:  #eaedf1;
+    max-width: 100%;    
+} */
+
+/* body {
+	background: #eaedf1;
+	font-family: 'Lato', sans-serif;
+  margin-top:0;
+}   */
+
+/* .dropdowns {
+  display: flex;
+  flex-direction: column ;
+} */
+
+/* .DD {
+  width: fit-content;
+  height: 50 px;
+  border: 1 px solid #999;
+  font-size: 18px;
+
+} */
+
+/* footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    border-bottom: 1px solid lightblue;
+    padding: 0.5em 0 0.5em 1em;
+    margin-bottom: 2em;
+    position: fixed;
+    z-index: 11;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    margin: auto;
+} */
+
+/* aside { 
+  width: 30%;
+  border: 2px solid black;
+  padding-left: 15 px;
+  margin-left: 15 px;
+  float: right;
+  background-color: rgb(241, 245, 248, .5);
+} */
+

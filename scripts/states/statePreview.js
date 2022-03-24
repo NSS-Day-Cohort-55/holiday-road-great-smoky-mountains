@@ -1,3 +1,4 @@
+import { getStates } from "./stateDataManager.js";
 
 const statePreviewHTML = (state) => {
     return `
