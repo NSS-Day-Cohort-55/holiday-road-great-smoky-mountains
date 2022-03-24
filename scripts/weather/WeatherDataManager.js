@@ -1,32 +1,25 @@
-export const getWeatherForecast = (weatherKey) => {
-    return fetch(`${weatherKey}`).
-    then(response => response.json())
+export const getWeather = (link) => {
+    return fetch(`${link}`).then(response => response.json())
 }
 
+export const fiveDayForecast = (weatherArray) => {
+    let splitOne = weatherArray.list[0].dt_txt.split('-')
+    let splitt = splitOne[2].split(' ')
 
-// fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/New%20York%20City%2CNY?unitGroup=us&key=YOUR_API_KEY&contentType=json", {
-//   method: 'GET', 
-//   headers: {
- 
-//   },
-           
-// }).then(response => {
-//   if (!response.ok) {
-//     throw response; //check the http response code and if isn't ok then throw the response as an error
-//   }
-            
-//   return response.json(); //parse the result as JSON
+    let counterStart = splitt[0]
+    let weathers = []
+    weatherArray.list.forEach(ele => {
+        if (ele.dt_txt.includes(`${splitOne[0]}-${splitOne[1]}-${counterStart}`)) {
+            weathers.push(ele)
+            counterStart++
+        }
+    })
+    console.log(weathers);
 
-// }).then(response => {
-//   //response now contains parsed JSON ready for use
-//   processWeatherData(response);
+    let dayCounter = 1
+    weathers.slice(0, 5).forEach(weatherObj => {
+        document.querySelector("#forecast").innerHTML += `<li><strong>Day ${dayCounter}:</strong> Temp: ${weatherObj.main.temp}, expect ${weatherObj.weather[0].description}.</li>`
+        dayCounter++
+    })
+}
 
-// }).catch((errorResponse) => {
-//   if (errorResponse.text) { //additional error information
-//     errorResponse.text().then( errorMessage => {
-//       //errorMessage now returns the response body which includes the full error message
-//     })
-//   } else {
-//     //no additional error information 
-//   } 
-// });

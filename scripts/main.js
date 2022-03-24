@@ -12,6 +12,7 @@ import { previewState } from "./states/statePreview.js";
 import { previewPark } from "./parks/parksPreview.js";
 import {getEateries} from "./eateries/EateryDataManager.js"
 import {getAttractions} from "./attractions/AttractionDataManager.js"
+import {getWeather, fiveDayForecast} from "./weather/WeatherDataManager.js"
 
 const initializeSite = () => {
     showStates()
@@ -34,6 +35,13 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
                 let selectedPark = event.target.value;
                 previewPark(selectedPark)
                 let result = parks.data.find(o => o.fullName === event.target.value)
+                document.querySelector("body").classList.add("background-image")
+                document.querySelector("body").style.backgroundImage = `url(${result.images[0].url})`
+                
+                getWeather(settings.weatherKey +`&lat=${result.latitude}&lon=${result.longitude}`)
+                .then(weatherArr => {
+                    fiveDayForecast(weatherArr)
+                })
                 document.querySelector("main").classList.add("background-image")
                 document.querySelector("main").style.backgroundImage = `url(${result.images[0].url})`
             })

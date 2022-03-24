@@ -4,8 +4,14 @@ const parksPreviewHTML = (parks) => {
     <section>
         <header>
             <h3>${parks}</h3>
-            <button id="park-details">details</button>
         </header>
+        <section>
+            <h2>5 Day Forecast:</h2>
+            <ul id="forecast">
+
+            </ul>
+        </section>
+        <button id="park-details">details</button>
     </section>`
 }
 
