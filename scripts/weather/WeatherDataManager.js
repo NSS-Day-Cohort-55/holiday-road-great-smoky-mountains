@@ -9,7 +9,7 @@ export const fiveDayForecast = (weatherArray) => {
     let counterStart = splitt[0]
     let weathers = []
     weatherArray.list.forEach(ele => {
-        if (ele.dt_txt.includes(`${splitOne[0]}-${splitOne[1]}-${counterStart}`.toString())) {
+        if (ele.dt_txt.includes(`${splitOne[0]}-${splitOne[1]}-${counterStart}`)) {
             weathers.push(ele)
             counterStart++
         }
@@ -17,8 +17,8 @@ export const fiveDayForecast = (weatherArray) => {
     console.log(weathers);
 
     let dayCounter = 1
-    weathers.forEach(weatherObj => {
-        document.querySelector("#forecast").innerHTML += `<li>Day ${dayCounter} Temp: ${weatherObj.main.temp}</li>`
+    weathers.slice(0, 5).forEach(weatherObj => {
+        document.querySelector("#forecast").innerHTML += `<li><strong>Day ${dayCounter}:</strong> Temp: ${weatherObj.main.temp}, expect ${weatherObj.weather[0].description}.</li>`
         dayCounter++
     })
 }
