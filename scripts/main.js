@@ -35,7 +35,6 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
                 let selectedPark = event.target.value;
                 previewPark(selectedPark)
                 let result = parks.data.find(o => o.fullName === event.target.value)
-<<<<<<< HEAD
                 document.querySelector("body").classList.add("background-image")
                 document.querySelector("body").style.backgroundImage = `url(${result.images[0].url})`
                 
@@ -43,10 +42,8 @@ document.querySelector(".dropdowns").addEventListener("change", event => {
                 .then(weatherArr => {
                     fiveDayForecast(weatherArr)
                 })
-=======
                 document.querySelector("main").classList.add("background-image")
                 document.querySelector("main").style.backgroundImage = `url(${result.images[0].url})`
->>>>>>> main
             })
     }
 })
