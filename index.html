@@ -11,56 +11,64 @@
   
 
 
-  <header class="Header">
-   
+
+<body>
+
+  <header class="header">   
     <div class="logo-image">
       <img class="logo" src="images/Great Smoky Mountains-logos_black.png" alt="GSM logo">
-      </div>
-      <h1> Let's Take an Adventurous Road Trip to the Parks of the United States of America </h1>
-      </header>
+    </div>
+    <h1> Let's Take an Adventurous Road Trip to the Parks of the United States of America </h1>
+  </header>
 
- <body>
-   <div class="content">
-     
-  <div class="dropdowns">
-    <select name="filteredStates" class="DD" id="filteredStates">
-      <option value=''>-- Select a State to Find a Park--</option>
-    </select>
-
-    <div class="parksBox"></div>
-
-    <select name="eateryDD" class="DD" id="eateryDD">
-      <option value="">-- Select an Eatery --</option>
-    </select>
-
-    <select name="attractionsDD" class="DD" id="attractionsDD">
-      <option value="">-- Select an Attraction --</option>
-    </select>
+  <main>
     
-  </div>
+    <div class="leftC">
 
-  <div class="details-box"></div>
-  <div id="previewBox">
-  
-  <aside class="tripPreview">
-    <h2>Trip Preview</h2>
-    <section class="statePreview">
-    </section>
-    <section class="parkPreview">
-    </section>
-    <section class="eateryPreview">
-    </section>
-    <section class="bizarrePreview">
-    </section>
-    <button id="saveButton">Save Trip</button>
-  </aside>
-    <div class="savedTrips"></div>
+      <div class="dropdowns">
+        <select name="filteredStates" class="DD" id="filteredStates">
+          <option value=''>-- Select a State to Find a Park--</option>
+        </select>
 
-  </div>
+        <div class="parksBox"></div>
 
-  <div class="footer">
-    <footer>&copy; C55 - NSS Road Trips GREAT SMOKY MOUNTAINS Group- Andrew, Luke, Wesley & Sippy.</footer>
-  </div>
+        <select name="eateryDD" class="DD" id="eateryDD">
+          <option value="">-- Select an Eatery --</option>
+        </select>
+
+        <select name="attractionsDD" class="DD" id="attractionsDD">
+          <option value="">-- Select an Attraction --</option>
+        </select>      
+      </div>
+
+      <div class="savedTrips">Your Travel Itinerary</div>
+
+    </div>
+
+    <div class="rightC">
+
+      <aside id="previewBox" class="tripPreview">
+        <h2 class=>Trip Preview</h2>
+        <section class="statePreview">
+        </section>
+        <section class="parkPreview">
+        </section>
+        <section class="eateryPreview">
+        </section>
+        <section class="bizarrePreview">
+        </section>
+        <button id="saveButton">Save Trip</button>
+      </aside>
+
+      <div class="details-box">More Details</div>
+      
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; C55 - NSS Road Trips GREAT SMOKY MOUNTAINS Group- Andrew, Luke, Wesley & Sippy.
+  </footer>
 
   <script type="module" src="./scripts/main.js"></script>
 </body>
