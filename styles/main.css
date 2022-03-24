@@ -8,16 +8,6 @@ body {
   font-family: 'Hubballi', cursive;
 }
 
-/* .tripPreview {
-    background-color: rgb(241, 245, 248, .5);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 42em;
-    width: 50vw;
-
-} */
-
 .tripPreview {
   border: 4px black solid;
   background-color: #001b36;
@@ -29,9 +19,6 @@ body {
   width: 30em;
   padding: 1em;
   align-items: flex-start;
-  /* overflow: scroll;
-  overflow-x: hidden;
-  overflow-y:auto */
 }
 
 .bHeader {
@@ -53,7 +40,6 @@ body {
   border-bottom: solid black 1px;
 }
 
-
 .dBox {
     height: 14em;
     width: 50vw;
@@ -62,11 +48,9 @@ body {
 
 .header {
   display: flex;
-  /* height: 7; */
   width: 100vw;
   border-bottom: 1em solid black;
 }
-
 
 select {
   color: whitesmoke;
@@ -76,7 +60,6 @@ select {
   font-variant-caps: all-small-caps;
   font-size: large;
 }
-
 
 button {
   height: 2.5em;
@@ -118,7 +101,6 @@ main {
 .leftC {
   display: flex;
   flex-direction: column;
-  /* height: 80vh; */
   width: 50vw;
 }
 
@@ -129,78 +111,14 @@ main {
 .rightC {
   display: flex;
   flex-direction: column;
-  /* height: 80vh; */
   align-items: flex-end;
   width: 50vw;
   background-color: rgb(241, 245, 248, .5);
 }
 
 footer {
-  /* height: 5vh; */
   width: 100vw;
   border-top: 1em solid black;
 
 }
-
-/* .logo-image {
-    max-width: 100%;
-    /* border-top: 1px solid lightblue; */
-    background-color: #eaedf1;
-} */
-  
-  /* .logo {
-    height: 100px;
-    margin-right: 50px;
-    width: 20%;    
-} */
-
-/* header {
-    display: flex;
-    border-top: 1px solid lightblue;
-    background-color:  #eaedf1;
-    max-width: 100%;    
-} */
-
-/* body {
-	background: #eaedf1;
-	font-family: 'Lato', sans-serif;
-  margin-top:0;
-}   */
-
-/* .dropdowns {
-  display: flex;
-  flex-direction: column ;
-} */
-
-/* .DD {
-  width: fit-content;
-  height: 50 px;
-  border: 1 px solid #999;
-  font-size: 18px;
-
-} */
-
-/* footer {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: start;
-    border-bottom: 1px solid lightblue;
-    padding: 0.5em 0 0.5em 1em;
-    margin-bottom: 2em;
-    position: fixed;
-    z-index: 11;
-    bottom: 0;
-    width: 100%;
-    background-color: whitesmoke;
-    margin: auto;
-} */
-
-/* aside { 
-  width: 30%;
-  border: 2px solid black;
-  padding-left: 15 px;
-  margin-left: 15 px;
-  float: right;
-  background-color: rgb(241, 245, 248, .5);
-} */
 
