@@ -121,8 +121,8 @@ document.querySelector(".tripPreview").addEventListener("click", event => {
                 let foundEatery = eateries.find(o => o.businessName === chosenEatery)
                 document.querySelector(".details-box").innerHTML = 
                 `
-                City: ${foundEatery.city} \n
-                State: ${foundEatery.state} \n
+                <p>City: ${foundEatery.city} \n</p>
+                <p>State: ${foundEatery.state} \n</p>
                 ${foundEatery.description}
                 `
             })
